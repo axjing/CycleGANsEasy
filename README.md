@@ -1,3 +1,8 @@
+# CycleGANsEasy 
+
+代码来源于CycleGAN and pix2pix in PyTorch，该仓库使其中代码更通俗易用
+- 修改可视化模块：由于国内使用visdom、wandb模块网络不稳定，所以修改这两个可视化模块，使用tensorboard实现训练过程可视化
+- 代码注释便于使用理解
 
 <img src='imgs/horse2zebra.gif' align="right" width=384>
 

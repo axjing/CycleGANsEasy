@@ -1,5 +1,9 @@
 .DS_Store
 debug*
+runs/
+datasets/horse2zebra
+datasets/maps
+datasets/*.zip
 checkpoints/
 results/
 build/
