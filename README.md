@@ -129,6 +129,20 @@ To see more intermediate results, check out `./checkpoints/maps_cyclegan/web/ind
 #!./scripts/test_cyclegan.sh
 python test.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
 ```
+
+- Test the BtoA model
+如果你想测试BtoA类的模型，也即风格转换为艺术图像，可以使用一下命令
+```shell
+$ bash ./scripts/download_cyclegan_model.sh style_monet
+$ python test --dataroot ./datasets/monet2photo --name style_monet_cyclegan --model cycle_gan --no_dropout --direction BtoA
+```
+
+- Test the AtoB model
+如果你想测试AtoB类的模型，也即将艺术风格的图像转换为自然图像，可以使用一下命令
+```shell
+$ bash ./scripts/download_cyclegan_model.sh style_monet
+$ python test --dataroot ./datasets/monet2photo --name monet2photo_cyclegan --model cycle_gan --no_dropout --direction AtoB
+```
 - The test results will be saved to a html file here: `./results/maps_cyclegan/latest_test/index.html`.
 
 ### pix2pix train/test

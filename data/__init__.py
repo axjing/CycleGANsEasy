@@ -60,7 +60,7 @@ def create_dataset(opt):
 
 
 class CustomDatasetDataLoader():
-    """Wrapper class of Dataset class that performs multi-threaded data loading"""
+    """Dataset类的包装器类，用于执行多线程数据加载"""
 
     def __init__(self, opt):
         """Initialize this class

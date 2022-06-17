@@ -2,6 +2,7 @@
 debug*
 runs/
 datasets/horse2zebra
+datasets/monet2photo/
 datasets/maps
 datasets/*.zip
 checkpoints/
